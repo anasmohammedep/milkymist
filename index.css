@@ -17,7 +17,6 @@ body{
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 9999;
   box-shadow: 0 2px 12px rgba(0,0,0,0.07);
 }
 .mm-logo img{
@@ -34,9 +33,6 @@ body{
 }
 .mm-nav a.active{
   color: #7ab8e6;
-}
-#menu-toggle{
-  display: none;
 }
 .mm-hamburger{
   display: none;
@@ -56,27 +52,7 @@ body{
   font-size: 18px;
   color: #777;
 }
-@media(max-width: 950px){
-  .mm-hamburger{
-    display: block;
-  }
-  .mm-nav{
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: #fffff2;
-    padding: 20px;
-    gap: 18px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    border-top: 1px solid #eee;
-  }
-  #menu-toggle:checked ~ .mm-nav{
-    display: flex;
-  }
-}
+
 *{
   margin: 0;
   padding: 0;
